@@ -709,7 +709,7 @@ SWITCHES: dict[str, tuple[SwitchEntityDescription, ...]] = {
     "dr": (
         SwitchEntityDescription(
             key=DPCode.SWITCH,
-            name="Power",
+            name="Master Power",
             icon="mdi:power",
             device_class=SwitchDeviceClass.SWITCH,
         ),
@@ -727,7 +727,7 @@ SWITCHES: dict[str, tuple[SwitchEntityDescription, ...]] = {
         ),
         SwitchEntityDescription(
             key=DPCode.PREHEAT,
-            name="Preheat",
+            name="Master Preheat",
             icon="mdi:radiator",
             device_class=SwitchDeviceClass.SWITCH,
         ),

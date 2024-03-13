@@ -329,21 +329,21 @@ SELECTS: dict[str, tuple[SelectEntityDescription, ...]] = {
     "dr": (
         SelectEntityDescription(
             key=DPCode.LEVEL,
-            name="Level",
+            name="Master Heat Level",
             icon="mdi:thermometer-lines",
-            translation_key="blanket_level",
+            translation_key="heat_level",
         ),
         SelectEntityDescription(
             key=DPCode.LEVEL_1,
-            name="Side A Level",
+            name="Side A Heat Level",
             icon="mdi:thermometer-lines",
-            translation_key="blanket_level",
+            translation_key="heat_level",
         ),
         SelectEntityDescription(
             key=DPCode.LEVEL_2,
-            name="Side B Level",
+            name="Side B Heat Level",
             icon="mdi:thermometer-lines",
-            translation_key="blanket_level",
+            translation_key="heat_level",
         ),
     ),
 }
