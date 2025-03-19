@@ -1065,6 +1065,15 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
         ),
         *BATTERY_SENSORS,
     ),
+    # Human Presence Sensor
+    # https://developer.tuya.com/en/docs/iot/categoryhps?id=Kaiuz42yhn1hs
+    "hps": (
+        TuyaSensorEntityDescription(
+            key=DPCode.PRESENCE_STATE,
+            translation_key="presence_state",
+            icon="mdi:walk",
+        ),
+    ),
 }
 
 # Socket (duplicate of `kg`)
